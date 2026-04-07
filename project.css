@@ -1,0 +1,199 @@
+/* ── PROJECT PAGE STYLES ──────────────────────────────────── */
+
+/* HERO */
+.project-hero {
+    position: relative;
+    height: 340px;
+    overflow: visible;
+}
+
+.project-hero .decor-left {
+    top: 0;
+}
+
+.project-hero-center {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 760px;
+    padding: 0 20px;
+}
+
+.project-hero-title {
+    font-family: 'Betmo', cursive;
+    font-size: 88px;
+    line-height: 1;
+    color: #2b2b2b;
+    text-align: left;
+    font-weight: normal;
+}
+
+/* CONTENT WRAPPER */
+.project-content {
+    padding: 0 40px 80px;
+    text-align: center;
+}
+
+/* MAIN IMAGE */
+.project-img-wrap {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    min-height: 420px;
+    background: #c8c8c8;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+}
+
+.project-img-wrap img,
+.project-img-wrap video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* CAPTION */
+.project-caption {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #666;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+/* PROJECT TITLE */
+.project-name {
+    font-family: 'Betmo', cursive;
+    font-size: 72px;
+    line-height: 1.1;
+    color: #2b2b2b;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 44px;
+}
+
+/* DESCRIPTION */
+.project-desc {
+    max-width: 52%;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #2b2b2b;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+
+.project-desc p + p {
+    margin-top: 28px;
+}
+
+/* THUMBNAILS */
+.project-thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 72px;
+    margin-bottom: 64px;
+}
+
+.project-thumb {
+    width: 130px;
+    height: 200px;
+    overflow: hidden;
+    background: #c0c0c0;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+
+.project-thumb:hover {
+    opacity: 0.75;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* BOTTOM NAVIGATION */
+.project-bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+}
+
+.proj-nav-prev,
+.proj-nav-next {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: "Futura PT", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #5a5a5a;
+    transition: opacity 0.2s ease;
+}
+
+.proj-nav-home {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Futura PT", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #5a5a5a;
+    padding: 12px 30px;
+    transition: opacity 0.2s ease;
+}
+
+.proj-nav-home .proj-nav-decor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-width: 122px;
+    height: auto;
+    pointer-events: none;
+}
+
+.proj-nav-prev .proj-nav-decor,
+.proj-nav-next .proj-nav-decor {
+    display: block;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+}
+
+.proj-nav-prev:hover,
+.proj-nav-next:hover,
+.proj-nav-home:hover {
+    opacity: 0.5;
+}
+
+/* Override global span { font-family: Betmo } from style.css */
+.proj-nav-prev span,
+.proj-nav-next span,
+.proj-nav-home span {
+    font-family: "Futura PT", sans-serif;
+}
+
+/* Project hero title SVG */
+.project-hero-title-svg {
+    display: block;
+    height: 280px;
+    width: auto;
+    max-width: 100%;
+}
